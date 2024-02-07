@@ -2453,7 +2453,7 @@ scene.onOverlapTile(SpriteKind.Bomb_Shot, assets.tile`myTile11`, function (sprit
 })
 sprites.onOverlap(SpriteKind.Zombie, SpriteKind.Zombie, function (sprite, otherSprite) {
     sprite.vx += randint(10, -10)
-    sprite.vy += randint(10, -10)
+    sprite.vy += randint(10, -11)
 })
 controller.B.onEvent(ControllerButtonEvent.Pressed, function () {
     if (Shooting == true) {
