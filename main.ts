@@ -5375,6 +5375,10 @@ sprites.onOverlap(SpriteKind.Uriel, SpriteKind.Player, function (sprite, otherSp
 sprites.onOverlap(SpriteKind.Horsemen3, SpriteKind.Player, function (sprite, otherSprite) {
     statusbar.value += -1
 })
+sprites.onOverlap(SpriteKind.EnemyZombie, SpriteKind.EnemyZombie, function (sprite, otherSprite) {
+    sprite.vx += randint(10, -11)
+    sprite.vy += randint(10, -11)
+})
 scene.onOverlapTile(SpriteKind.Bomb_Shot, assets.tile`myTile23`, function (sprite, location) {
     sprites.destroy(sprite)
 })
