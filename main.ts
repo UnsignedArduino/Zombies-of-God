@@ -3180,7 +3180,7 @@ sprites.onOverlap(SpriteKind.Right_Hand, SpriteKind.Player, function (sprite, ot
             ..............................
             `)
         pause(500)
-        for (let index = 0; index < 3; index++) {
+        for (let index = 0; index < 5; index++) {
             projectile2 = sprites.createProjectileFromSprite(img`
                 . . . . . . . . . . . . . . . . 
                 . . . . . . . . . . . . . . . . 
@@ -3200,7 +3200,7 @@ sprites.onOverlap(SpriteKind.Right_Hand, SpriteKind.Player, function (sprite, ot
                 . . . . . . . . . . . . . . . . 
                 `, sprite, -50, 50)
             projectile2.setKind(SpriteKind.EnemyProjectile)
-            projectile2.follow(mySprite, 60)
+            projectile2.follow(mySprite, 80)
             projectile2.lifespan = 1000
             animation.runImageAnimation(
             projectile2,
@@ -5664,12 +5664,12 @@ function Olympus () {
     false
     )
     pause(3000)
-    if (_10thScene1stTime == 0) {
+    if (_11thScene1stTime == 0) {
         story.printCharacterText("Welcome, young one.")
         story.printCharacterText("This is the Alpha, the Beginning.")
         story.printCharacterText("From here, vile emits from below.")
         story.printCharacterText("Whether you survive or perish,")
-        _10thScene1stTime = 1
+        _11thScene1stTime = 1
     }
     story.printCharacterText("This test is to be beaten.")
     pause(1000)
@@ -6128,7 +6128,7 @@ function Out_Of_Order () {
     if (_8thScene1stTime == 0) {
         story.printCharacterText("I should be safe in here..", "Felix")
         music.play(music.createSong(hex`00c8000408020207001c00020a006400f4016400000400000000000000000000000000000000030c0000001000012910002000012509010e02026400000403780000040a000301000000640001c80000040100000000640001640000040100000000fa0004af00000401c80000040a00019600000414000501006400140005010000002c0104dc00000401fa0000040a0001c8000004140005d0076400140005d0070000c800029001f40105c201f4010a0005900114001400039001000005c201f4010500058403050032000584030000fa00049001000005c201f4010500058403c80032000584030500640005840300009001049001000005c201f4010500058403c80064000584030500c8000584030000f40105ac0d000404a00f00000a0004ac0d2003010004a00f0000280004ac0d9001010004a00f0000280002d00700040408070f0064000408070000c80003c800c8000e7d00c80019000e64000f0032000e78000000fa00032c01c8000ee100c80019000ec8000f0032000edc000000fa0003f401c8000ea901c80019000e90010f0032000ea4010000fa0001c8000004014b000000c800012c01000401c8000000c8000190010004012c010000c80002c800000404c8000f0064000496000000c80002c2010004045e010f006400042c010000640002c409000404c4096400960004f6090000f40102b80b000404b80b64002c0104f40b0000f401022003000004200300040a000420030000ea01029001000004900100040a000490010000900102d007000410d0076400960010d0070000c8000c00000001000106100011000106`), music.PlaybackMode.UntilDone)
-        story.printCharacterText("Welcome to Five Nights at Lemon's!...and for you...", "Intercom")
+        story.printCharacterText("Welcome to the Lemon Shack!...and for you...", "Intercom")
         story.printCharacterText("Welcome back to hell...", "Intercom")
         story.printCharacterText("..Felix.", "Intercom")
         story.printCharacterText("!?", "Felix")
@@ -7322,7 +7322,7 @@ function Zeuss_Wrath () {
         story.printCharacterText("Tis am Felix III", "Felix III")
         scene.cameraShake(4, 500)
         story.printCharacterText("Wow!", "Felix")
-        story.printCharacterText("What's your last lame?", "Felix")
+        story.printCharacterText("What's your last name?", "Felix")
         story.printCharacterText("Tis Yerner, and thy are?", "Felix III")
         story.printCharacterText("I'm Yerner too! Weird.", "Felix")
         story.printCharacterText("To thyself be good, but tis of now, thy monsters aproach!", "Felix III")
